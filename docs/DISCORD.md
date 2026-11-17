@@ -44,7 +44,7 @@ Set up November 17, 2026. This is the movement's first community space. It is ke
 > Say hi in #general: who you are, what you're good at, and what you'd like to build.
 > 🌐 oureconomy.net · 💻 github.com/our-economy
 
-The welcome message above replaces the first version (2026-11-17), which said "Early contributions are recorded from day one" and asked for available hours. Hour tracking is deferred, so that wording overpromised. **As of 2026-11-17 the pinned message in Discord still shows the old text and needs editing by hand.**
+The welcome message above replaces the first version (2026-11-17), which said "Early contributions are recorded from day one" and asked for available hours. Hour tracking is deferred, so that wording overpromised. The pinned message in Discord was updated to this text on 2026-11-17.
 
 > **Guidelines**
 > 1. Be kind and assume good faith. People join from every country and background.

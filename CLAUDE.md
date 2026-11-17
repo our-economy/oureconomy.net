@@ -28,6 +28,11 @@ The website for **Our Economy**: a global movement that invites anyone badly ser
   - possibly a Found Teams fork
 - Record new decisions (stack, hosting, data model) in `docs/DECISIONS.md`, so later sessions don't have to work them out again.
 
+## Code layout and commands
+- Next.js (App Router), `output: "export"`: a fully static site, built to `out/`. Tailwind CSS 4.
+- Page text: `src/content/en.ts`. The page: `src/app/page.tsx`. Colors: `src/app/globals.css`.
+- `npm run dev` (local server), `npm run lint`, `npm run build`. CI runs lint and build on every pull request.
+
 ## Guidance for working on this repo
 - Tone: an invitation to build, not ideology or protest. Plain language that people anywhere can understand and that translates well. No jargon like "solidarity economy" or "post-capitalism" in the main copy.
 - Build in small, shippable steps.
