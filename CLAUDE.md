@@ -20,7 +20,7 @@ The website for **Our Economy**: a global movement that invites anyone badly ser
 - This repo: **our-economy/oureconomy.net**: the website only. Other things the movement builds live in their own repos with their own licenses.
 - The repo is public from day one. Issues labeled `good first task` act as the "what can I do today" list.
 - Licenses (confirmed 2026-11-17): **AGPL-3.0** for the code (`LICENSE`), **CC BY-SA 4.0** for written content (`LICENSE-CONTENT`).
-- Community chat: Discord server "Our Economy", invite-only for now. Permanent invite: https://discord.gg/s6PzMtX6V9 (see `docs/DISCORD.md`). Whether the link goes on public pages is still open (`docs/DECISIONS.md`).
+- Community chat: Discord server "Our Economy" (Community mode on, public invite). Permanent invite: https://discord.gg/s6PzMtX6V9 (see `docs/DISCORD.md`). It goes on the pitch page.
 - Planned sibling repos:
   - `our-economy/.github`: org profile README with the core offer
   - `our-economy/charter`: the copyleft charter, edited openly through pull requests
