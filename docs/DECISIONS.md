@@ -2,9 +2,18 @@
 
 Newest first. Each entry says what was decided and why, so later sessions don't reopen settled questions without a reason.
 
-## Open: is the Discord link public?
+## 2026-11-17: Pitch page implementation details
 
-Options: put the invite link on oureconomy.net (anyone who finds the site can join), or keep it private and have people ask for an invite. Until this is decided, the link stays off public pages. See `docs/DISCORD.md`.
+- **Next.js 16.4.6**, not the hub's 16.3.4: 16.3.4 has published security advisories. Most of them affect server features a static export doesn't use, but there was no reason to start on an old version.
+- **System fonts only.** Nothing to download, fast on slow connections, and every script and language renders with the reader's own fonts.
+- **All page text lives in `src/content/en.ts`.** Translating later means adding a sibling file and a locale route, not hunting through components. No i18n library until there's a second language.
+- No Azure deploy workflow yet: Azure generates it when the Static Web App is created and linked to this repo.
+
+## 2026-11-17: The Discord invite is public
+
+**Decision:** The permanent invite link goes on oureconomy.net. Anyone who finds the site can join.
+
+**Why:** The offer is "we take everyone", and asking people to email for an invite contradicts it and makes the owner a bottleneck. The site's honest "early, no pay, no hour tracking" copy does the screening. The server was made public-ready first (Community mode, AutoMod, guidelines; see `docs/DISCORD.md`). If spam becomes a problem: revoke the link, raise verification, or fall back to invites on request.
 
 ## 2026-11-17: Licenses
 
