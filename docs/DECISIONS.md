@@ -2,6 +2,12 @@
 
 Newest first. Each entry says what was decided and why, so later sessions don't reopen settled questions without a reason.
 
+## 2026-11-18: The main address is oureconomy.net (no www)
+
+**Decision:** `https://oureconomy.net` is the canonical address. `www` and the Azure hostname redirect to it. Hosting details are in `docs/INFRASTRUCTURE.md`.
+
+**Why:** Shorter and cleaner when typed, printed or said aloud. (neweconomyhub.net uses `www`; the two sites don't need to match.)
+
 ## 2026-11-17: Pitch page implementation details
 
 - **Next.js 16.4.6**, not the hub's 16.3.4: 16.3.4 has published security advisories. Most of them affect server features a static export doesn't use, but there was no reason to start on an old version.

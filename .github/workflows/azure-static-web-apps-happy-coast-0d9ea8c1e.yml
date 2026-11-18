@@ -8,14 +8,31 @@ on:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+  # Manual redeploy, e.g. after changing settings in the Azure portal.
+  workflow_dispatch:
 
 jobs:
   build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    # Pull requests from forks can't read the deploy token, so their deploy
+    # would just fail. They still get the build check from ci.yml.
+    if: >-
+      github.event_name == 'push' ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request' &&
+       github.event.action != 'closed' &&
+       github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     name: Build and Deploy Job
+    # The deploy action posts each PR's preview URL as a comment. The default
+    # GITHUB_TOKEN is read-only, so without these the comment fails silently
+    # (seen on neweconomyhub.net). Listing permissions replaces the defaults,
+    # so checkout's read access is listed too.
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
         with:
           submodules: true
           lfs: false
@@ -34,7 +51,10 @@ jobs:
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.action == 'closed' &&
+      github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     name: Close Pull Request Job
     steps:

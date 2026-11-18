@@ -32,6 +32,7 @@ The website for **Our Economy**: a global movement that invites anyone badly ser
 - Next.js (App Router), `output: "export"`: a fully static site, built to `out/`. Tailwind CSS 4.
 - Page text: `src/content/en.ts`. The page: `src/app/page.tsx`. Colors: `src/app/globals.css`.
 - `npm run dev` (local server), `npm run lint`, `npm run build`. CI runs lint and build on every pull request.
+- Hosting: Azure Static Web Apps, deployed on every push to `main`, with a preview site per PR. Main address `https://oureconomy.net`. Details and gotchas: `docs/INFRASTRUCTURE.md`.
 
 ## Guidance for working on this repo
 - Tone: an invitation to build, not ideology or protest. Plain language that people anywhere can understand and that translates well. No jargon like "solidarity economy" or "post-capitalism" in the main copy.
