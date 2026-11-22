@@ -6,16 +6,20 @@ import { en } from "@/content/en";
 // The picture shown when a link to the site is shared (WhatsApp, Discord,
 // LinkedIn, email...). Generated once at build time, so there's no image file
 // to keep in sync with the copy. Colors match the light theme in globals.css.
+//
+// This is a route named `og.png` rather than Next's `opengraph-image`
+// convention on purpose: the static export writes the convention's image to
+// a file with no extension, which Azure serves as application/octet-stream
+// (with nosniff) and won't override. A `.png` filename gets image/png.
+// layout.tsx points the og:image / twitter:image tags here.
 export const dynamic = "force-static";
-export const alt = en.meta.title;
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+const size = { width: 1200, height: 630 };
 
 // next/og's built-in font has no bold weight, so load Inter (OFL-licensed,
 // from @fontsource/inter). Only used at build time; nothing ships to visitors.
 const fontDir = join(process.cwd(), "node_modules/@fontsource/inter/files");
 
-export default async function Image() {
+export async function GET() {
   const [regular, semibold, bold] = await Promise.all(
     [400, 600, 700].map((w) =>
       readFile(join(fontDir, `inter-latin-${w}-normal.woff`)),
