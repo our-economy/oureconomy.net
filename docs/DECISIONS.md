@@ -2,6 +2,12 @@
 
 Newest first. Each entry says what was decided and why, so later sessions don't reopen settled questions without a reason.
 
+## 2026-11-22: Link previews, icon, robots.txt and sitemap
+
+**Decision:** The preview image shown when the site is shared is generated at build time from the page copy (`src/app/opengraph-image.tsx`), using Inter from `@fontsource/inter` because next/og's built-in font has no bold. The icon is a single SVG (`src/app/icon.svg`). `robots.txt` and `sitemap.xml` are generated from `src/app/robots.ts` and `src/app/sitemap.ts`.
+
+**Why:** Most people will first see the site as a shared link. Generating the image from `src/content/en.ts` keeps it in sync with the copy. The static export writes the image to a file with no extension (`/opengraph-image`), so `public/staticwebapp.config.json` tells Azure to serve it as `image/png`; without that, link previews may reject it.
+
 ## 2026-11-18: The main address is oureconomy.net (no www)
 
 **Decision:** `https://oureconomy.net` is the canonical address. `www` and the Azure hostname redirect to it. Hosting details are in `docs/INFRASTRUCTURE.md`.
