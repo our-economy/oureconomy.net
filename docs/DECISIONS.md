@@ -2,6 +2,21 @@
 
 Newest first. Each entry says what was decided and why, so later sessions don't reopen settled questions without a reason.
 
+## 2026-11-24: "Our current thinking" pages, and the words we use
+
+**Decision:** The site grows from one page to the pitch plus an Ideas section (`/ideas/`): short, living pages with our current thinking. Each page has a status (Draft / Taking shape / Agreed), a last-updated date, an "in flux" notice ("mostly written by the founder so far"), and ends with questions for readers, plus links to discuss on Discord and suggest a change on GitHub.
+
+- **Purpose:** give prospective joiners a sense of what we're trying to build and start conversations. Still static: no backend, no forms, no data collected.
+- **Living pages, not a blog.** They're revised in place as thinking changes. A dated blog/news section may come later (see `BACKLOG.md`).
+- **Statuses:** every page starts as *Draft*. The founder can move a page to *Taking shape*. *Agreed* is reserved for decisions made with the group once it exists.
+- **No roadmap page yet.** Stages get decided and iterated as the group grows. One page on how we might organize, and how a company moves through stages, is planned instead.
+- **Content format:** page metadata in `src/content/en/ideas.ts` (typed), page text in Markdown files (`src/content/en/ideas/<slug>.md`) so non-programmers can suggest edits on GitHub. Rendered at build time with `marked` (pinned, no dependencies).
+- **`trailingSlash: true`:** the static export writes `ideas/<slug>/index.html`, which any static host serves at `/ideas/<slug>/` with no rewrite rules.
+- **Terms:** "the main economy" and "Our Economy". "Solidarity economy" only on the page about where we fit in that wider family. Our Economy is a group within that family proposing a direction (snowball, everyone in, any amount of time, joined up, companies starting in groups, alongside the main economy). See the wording guide in `CLAUDE.md`.
+- **Comments on the pages:** not yet decided (see `BACKLOG.md`). Until then, Discord and GitHub links.
+
+**Why:** The founder is the only member right now, and content that makes people think is the best way to start conversations. Markdown keeps editing open. "Our Economy" is plain, already ours, and avoids a term ("solidarity economy") that means different things in different places and is unknown to many.
+
 ## 2026-11-18: The main address is oureconomy.net (no www)
 
 **Decision:** `https://oureconomy.net` is the canonical address. `www` and the Azure hostname redirect to it. Hosting details are in `docs/INFRASTRUCTURE.md`.

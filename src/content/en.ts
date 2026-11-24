@@ -29,9 +29,9 @@ export const en = {
   why: {
     heading: "Why",
     paragraphs: [
-      "Lots of people are left out of today's economy, or badly served by it. The market decides who's in. We'd like to start from everyone being in.",
-      "Co-ops have shown for over a hundred years that people can own the places they work. But they mostly stay small, and each one starts from scratch. Success in one rarely helps start the next.",
-      "We want to try something different: a network of co-owned projects and companies, built so that each one helps start the next, alongside the economy we already have.",
+      "The main economy is good at many things, but it isn't built to make room for everyone. Lots of people are left out of it, badly served by it, or worn out by it. We'd like to start from everyone being in.",
+      "Co-ops and community projects have shown for over a hundred years that people can own the places they work and look after each other. But co-ops mostly stay small, and each one starts from scratch. Success in one rarely helps start the next.",
+      "We want to try something different: a second economy, built next to the main one. A network of co-owned projects and companies, made so that each one helps start the next.",
     ],
   },
   ideas: {
@@ -58,6 +58,8 @@ export const en = {
         body: "Not against anything. We trade with the wider economy and build next to it.",
       },
     ],
+    moreIntro: "Want the longer version, with the questions we haven't answered yet?",
+    moreCta: "Read our current thinking",
   },
   now: {
     heading: "Where we are, honestly",
@@ -94,7 +96,7 @@ export const en = {
     ],
   },
   footer: {
-    hubIntro: "Looking for other groups building a fairer economy?",
+    hubIntro: "Looking for other groups building new kinds of economy?",
     hubLink: "Explore New Economy Hub",
     source: "Source code",
     license:

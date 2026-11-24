@@ -49,3 +49,50 @@ body {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
+
+/* Text written in Markdown (the Ideas pages). */
+.prose-page {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+.prose-page > * + * {
+  margin-top: 1.1em;
+}
+.prose-page h2 {
+  margin-top: 2em;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.prose-page h3 {
+  margin-top: 1.6em;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.prose-page ul,
+.prose-page ol {
+  padding-left: 1.5em;
+}
+.prose-page ul {
+  list-style: disc;
+}
+.prose-page ol {
+  list-style: decimal;
+}
+.prose-page li + li {
+  margin-top: 0.4em;
+}
+.prose-page a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.prose-page strong {
+  font-weight: 650;
+}
+.prose-page blockquote {
+  border-left: 4px solid var(--rule);
+  padding-left: 1em;
+  color: var(--muted);
+}

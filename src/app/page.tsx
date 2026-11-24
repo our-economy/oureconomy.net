@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { en as t, links } from "@/content/en";
-
-const container = "mx-auto w-full max-w-3xl px-4 sm:px-6";
+import { container } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 const sectionHeading =
   "text-2xl sm:text-3xl font-bold tracking-tight text-ink mb-6";
 
@@ -72,6 +73,15 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+            <p className="mt-10 text-lg">
+              {t.ideas.moreIntro}{" "}
+              <Link
+                href="/ideas"
+                className="font-semibold text-accent underline underline-offset-4"
+              >
+                {t.ideas.moreCta} →
+              </Link>
+            </p>
           </div>
         </section>
 
@@ -118,20 +128,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className={`${container} py-10 text-sm text-muted`}>
-        <p>
-          {t.footer.hubIntro}{" "}
-          <a href={links.hub} className="font-semibold text-accent underline underline-offset-4">
-            {t.footer.hubLink}
-          </a>
-        </p>
-        <p className="mt-3">
-          <a href={links.repo} className="underline underline-offset-4">
-            {t.footer.source}
-          </a>{" "}
-          · {t.footer.license}
-        </p>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

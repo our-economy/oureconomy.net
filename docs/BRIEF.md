@@ -27,13 +27,17 @@ Distilled from brainstorming conversations, November 2026. This is a starting po
    - **Firm layer:** you own part of the company you work in.
    - **Commons layer:** every member holds units in a shared fund. Charter companies pay into it. It pays dividends and seeds new teams. This answers "what if machines do the work?" and "what if there isn't enough work for everyone?"
 3. **Takes in everyone.** Aim for a guaranteed place within a set time: training, a probationary role, or paid commons work. Track publicly how many people are waiting for a place, how long they wait, and how many leave.
+   - **Any amount of time counts.** Taking in everyone includes taking in every amount of time: students, retirees, people with an illness or disability, carers, people with a full-time job elsewhere. No minimum hours. Work is cut into small tasks, every role has a backup, and contribution accounting must count an hour the same whoever gives it. This is also the only way the movement can be built, since for years almost everyone will meet most of their needs in the main economy.
 4. **A thin shared core, freedom at the edges.**
    - **The core** (required for everyone): the pledge, the contribution ledger, the snowball clause, the experiment registry.
    - **The edges** (anything goes): how groups organize and work.
 5. **A lab, not a startup.** Many parallel experiments: a 20-hour week, no fixed roles, rotating people through new skills, ownership contracts, transparency and commitment systems, federation, cross-border work, real businesses.
 6. **AI breaks up narrow specialization.** With AI help, people can be an expert in one thing and a generalist in many. Fulfilment comes from variety and from taking part in decisions.
-7. **Lives alongside the existing economy.** The wider market is context to trade with and draw from, not an enemy.
+7. **Lives alongside the existing economy. We build; we don't take.** The wider market is context to trade with and draw from, not an enemy. We don't tear down, replace or take from what humanity has already built (its wealth, institutions, systems). We add something new next to it that serves people the current setup leaves out, so the whole is more complete. Nobody has to lose for us to win. This is a strategy as much as a tone: it creates no opponents, and people doing well in the main economy can support or join without betraying anything.
 8. **Measure inclusion and security, not GDP.** The system should work even with a shrinking population, where growth no longer comes from more workers and consumers. In some rich countries (e.g. Sweden), low-income people are increasingly excluded from partnership and having children, so economic security is linked to family life.
+9. **Your mix, your choice.** People and companies split their work, spending and savings between the main economy and Our Economy, in any proportion, and change the mix over a lifetime (e.g. try your luck in the main economy, then shift toward Our Economy in a later phase, then back). This stays true after critical mass. Coming back carries no penalty: contributions stay recorded and stay yours.
+10. **Built for upheaval.** Designed to keep working when the main economy has a bad year (precedent: the Swiss WIR network, whose use rises in recessions, per James Stodder's research), and when machines do most of the work (members own the machines, so automation means less work for the same living). Hours can scale up for everyone when there's a real need and down for everyone when there's less work. Security we build and own ourselves, with or without public programs such as basic income. Don't frame it as "better than basic income".
+11. **Care is the shared purpose.** People come for security, ownership or pace, and that's welcome. But the movement is also driven by caring that everyone, everywhere, does well, and by the belief that most people are more fulfilled in an economy built for that. Said openly, as a belief we're testing. Builds on common ground shared by many religions and traditions without replacing or competing with any. This is the answer to "what holds a global membership together" (§5). Don't call it "faith" or "mission" in public copy.
 
 ## 4. Mechanisms to design (open problems)
 - **A "copyleft" charter for companies.** Any company can adopt it. Any company started with commons money or commons people must adopt it. It can include profit sharing into the commons and fair terms for new members.
@@ -53,7 +57,10 @@ Distilled from brainstorming conversations, November 2026. This is a starting po
 - The poorest 50% have the least spare time and money. The first businesses should need almost no capital and pay quickly (AI-assisted services, trades, care work).
 - What holds a global, culturally mixed membership together? (Mondragon had shared Basque identity and a founding leader.)
 
-## 6. First projects (each with a lead and "good first tasks")
+## 6. First projects
+
+> **Update, November 2026:** the near-term focus is content that helps prospective joiners understand what we're trying to build and start conversations: the "Our current thinking" pages at `/ideas/` (see `docs/DECISIONS.md`, 2026-11-24). The list below is still the longer-term direction.
+ (each with a lead and "good first tasks")
 1. **Launch site (oureconomy.net):** the pitch, an "I'm in" sign-up, a "what can I do today" page.
 2. **neweconomyhub.net:** keep maintaining it as the outward-facing map of the ecosystem.
 3. **Team formation and information sharing:** consider building on Found Teams (mutual opt-in matching, a Watch → Join → Probationary → Full membership ladder, fork/merge).
