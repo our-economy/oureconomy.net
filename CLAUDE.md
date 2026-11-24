@@ -6,7 +6,7 @@ The website for **Our Economy**: a global movement that invites anyone badly ser
 
 ## Current phase: experimentation (November 2026)
 
-- The site is **just the pitch**: one page, with links to the Discord server and the GitHub org. No sign-up form, no backend, no database, no personal data collected.
+- The site is **the pitch plus "Our current thinking"** (`/ideas/`): short, living pages on what we're trying to build, with links to the Discord server and the GitHub org. No sign-up form, no backend, no database, no personal data collected.
 - People meet on **Discord** (see `docs/DISCORD.md`).
 - **Hours are not tracked yet.** Contributions are visible in the open-source repos under github.com/our-economy. Contribution accounting gets designed later, with the first group of collaborators.
 - Copy must be honest about this: early, experimenting, no pay yet, no hour tracking yet. Don't promise anything the project can't deliver today.
@@ -30,12 +30,28 @@ The website for **Our Economy**: a global movement that invites anyone badly ser
 
 ## Code layout and commands
 - Next.js (App Router), `output: "export"`: a fully static site, built to `out/`. Tailwind CSS 4.
-- Page text: `src/content/en.ts`. The page: `src/app/page.tsx`. Colors: `src/app/globals.css`.
+- Home page text: `src/content/en.ts`; the page: `src/app/page.tsx`. Ideas pages: `src/content/en/ideas.ts` + `src/content/en/ideas/*.md`, rendered by `src/app/ideas/`. Colors: `src/app/globals.css`.
 - `npm run dev` (local server), `npm run lint`, `npm run build`. CI runs lint and build on every pull request.
 - Hosting: Azure Static Web Apps, deployed on every push to `main`, with a preview site per PR. Main address `https://oureconomy.net`. Details and gotchas: `docs/INFRASTRUCTURE.md`.
 
 ## Guidance for working on this repo
 - Tone: an invitation to build, not ideology or protest. Plain language that people anywhere can understand and that translates well. No jargon like "solidarity economy" or "post-capitalism" in the main copy.
+- **Terms (decided 2026-11-24):** the pair is **"the main economy"** and **"Our Economy"** ("your mix of the main economy and Our Economy"). "Solidarity economy" appears only where we explain where we fit in that wider family (`/ideas/where-we-fit/`), not as our main label.
+- **We build; we don't take.** Never criticize, blame or ask people to abandon the main economy. It has created a lot of wealth and health, and competition is its engine, not its flaw; it just isn't built to make room for everyone. Before publishing, ask: does this blame anyone? Does it ask anyone to give something up? Would someone doing well in the main economy feel welcome reading it?
+
+  | Instead of | Say |
+  |---|---|
+  | broken, failing, unfair, cut-throat, winner-take-all economy | the main economy |
+  | disinvest, exit, leave | shift some of your time and spending |
+  | replace, alternative to | alongside, a second economy, complement |
+  | redistribute, tax, take | build, own, share what we make |
+  | collapse, implosion | bad years, downturns, upheaval |
+  | faith, mission, calling | care, shared purpose, belief |
+  | blockchain | shared records, transparent records |
+  | "better than basic income" | "doesn't depend on basic income or any public program" |
+  | the excluded as victims | people looking for a place, or for something different |
+- Say "designed to", not "will", for anything untested (stability, 20-hour livelihoods). Cite sources for factual claims and check them before publishing.
+- **The Ideas pages** (`/ideas/`): metadata in `src/content/en/ideas.ts`, text in `src/content/en/ideas/<slug>.md`. Every page starts as *Draft*, shows the "in flux" notice, and ends with "Questions for you" to start conversations. Things deliberately not done yet are in `docs/BACKLOG.md`.
 - Build in small, shippable steps.
 - Plan for many languages and a global audience (i18n-ready text, no US-only assumptions), but don't add translation machinery until there's a second language to ship.
 - Keep the stack simple and cheap to host. Prefer open source.

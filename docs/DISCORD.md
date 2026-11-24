@@ -62,5 +62,6 @@ Add each piece only when it's needed:
 - **A first project gets a lead:** give it its own channel, one per active project.
 - **More than one person moderates:** add a Moderator role and give it access to `#moderator-only`.
 - **There are several project channels:** set up Onboarding (Server Settings → Onboarding), so newcomers pick their projects and languages. Consider rules screening there too, so members accept the guidelines before posting.
+- **The Ideas pages start conversations:** add an `#ideas` forum channel with one thread per page, and set each page's `discussUrl` in `src/content/en/ideas.ts` to its thread.
 - **The repo gets active:** connect a GitHub webhook that posts into a `#github-feed` channel.
 - **Spam shows up:** raise verification to Medium, and turn on AutoMod's "Block Commonly Flagged Words".
