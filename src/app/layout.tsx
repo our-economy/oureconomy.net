@@ -12,6 +12,13 @@ export const metadata: Metadata = {
     url: "https://oureconomy.net",
     siteName: "Our Economy",
     type: "website",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: en.meta.title }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: en.meta.title,
+    description: en.meta.description,
+    images: ["/og.png"],
   },
 };
 

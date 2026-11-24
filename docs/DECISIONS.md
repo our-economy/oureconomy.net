@@ -16,6 +16,11 @@ Newest first. Each entry says what was decided and why, so later sessions don't 
 - **Comments on the pages:** not yet decided (see `BACKLOG.md`). Until then, Discord and GitHub links.
 
 **Why:** The founder is the only member right now, and content that makes people think is the best way to start conversations. Markdown keeps editing open. "Our Economy" is plain, already ours, and avoids a term ("solidarity economy") that means different things in different places and is unknown to many.
+## 2026-11-22: Link previews, icon, robots.txt and sitemap
+
+**Decision:** The preview image shown when the site is shared is generated at build time from the page copy, as a static route at `/og.png` (`src/app/og.png/route.tsx`). It uses Inter from `@fontsource/inter` because next/og's built-in font has no bold. `layout.tsx` points the `og:image`/`twitter:image` tags at it. The icon is a single SVG (`src/app/icon.svg`). `robots.txt` and `sitemap.xml` are generated from `src/app/robots.ts` and `src/app/sitemap.ts`.
+
+**Why:** Most people will first see the site as a shared link, and generating the image from `src/content/en.ts` keeps it in sync with the copy. Next's `opengraph-image` file convention was tried first, but the static export writes that image to a file with no extension. Azure serves it as `application/octet-stream` with `nosniff`, and a `staticwebapp.config.json` route can't override the content type (checked on the PR #3 preview, 2026-11-22). A `.png` filename fixes it.
 
 ## 2026-11-18: The main address is oureconomy.net (no www)
 

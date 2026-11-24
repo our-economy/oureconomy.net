@@ -29,6 +29,8 @@ export async function generateMetadata({
       url: `/ideas/${idea.slug}/`,
       siteName: "Our Economy",
       type: "article",
+      // A page's openGraph replaces the layout's, so repeat the shared image.
+      images: [{ url: "/og.png", width: 1200, height: 630, alt: idea.title }],
     },
   };
 }
