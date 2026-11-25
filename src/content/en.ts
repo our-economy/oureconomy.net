@@ -24,7 +24,7 @@ export const en = {
     offer:
       "We take everyone. We may not be able to pay you yet, but here's real work building an economy you'll own part of.",
     joinCta: "Join us on Discord",
-    githubCta: "See the work on GitHub",
+    thinkingCta: "Read our current thinking",
   },
   why: {
     heading: "Why",
@@ -39,22 +39,27 @@ export const en = {
     items: [
       {
         title: "Everyone's in",
+        href: "/ideas/who-its-for/",
         body: "Anyone who wants to help has a place, whatever their skills or background.",
       },
       {
         title: "Everyone's an owner",
+        href: "/ideas/two-economies/",
         body: "You'd own part of the project you work on, and everyone would share in a common fund that helps start new teams.",
       },
       {
         title: "Built to snowball",
+        href: "/ideas/practice-companies/",
         body: "Every project should help start the next one, with people, tools and money.",
       },
       {
         title: "A lab, not a company",
+        href: "/ideas/where-we-fit/",
         body: "Groups try different ways of working and share what they learn, including what didn't work.",
       },
       {
         title: "Alongside the economy we have",
+        href: "/ideas/your-mix/",
         body: "Not against anything. We trade with the wider economy and build next to it.",
       },
     ],

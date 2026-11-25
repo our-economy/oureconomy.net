@@ -151,9 +151,16 @@ export const ideasText = {
   updatedLabel: "Last updated",
   notice:
     "This is our current thinking, and it will change as more people join. It settles only once there are enough of us to decide together. So far it's mostly written by the founder.",
-  discuss: {
+  comments: {
     heading: "What do you think?",
-    body: "Disagree, or see something missing? Come and talk about it, or suggest a change to this page.",
+    intro:
+      "Disagree, or see something missing? Leave a comment. You don't need an account, just a name.",
+    privacy:
+      "Comments are run by EchoThread, an outside service that sets no cookies and shows no ads. Your name and comment are public. Comments that break our guidelines (be kind, no spam, no harassment) may be removed.",
+  },
+  discuss: {
+    heading: "Other ways to join in",
+    body: "Prefer a live conversation? Come and talk on Discord. Want to improve the wording? Suggest a change to this page.",
     discordCta: "Talk about it on Discord",
     discordHint: "Start a conversation in #general.",
     editCta: "Suggest a change on GitHub",
