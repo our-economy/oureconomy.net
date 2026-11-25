@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { en as t, links } from "@/content/en";
-import { container } from "@/components/SiteNav";
+import { SiteNav, container } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 const sectionHeading =
   "text-2xl sm:text-3xl font-bold tracking-tight text-ink mb-6";
@@ -30,10 +30,10 @@ function ButtonLink({
 export default function Home() {
   return (
     <>
+      <SiteNav />
       <header className="border-b border-rule">
         <div className={`${container} py-16 sm:py-24`}>
-          <p className="text-lg font-semibold text-accent">{t.hero.name}</p>
-          <h1 className="mt-2 text-5xl sm:text-7xl font-bold tracking-tight text-balance">
+          <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-balance">
             {t.hero.tagline}
           </h1>
           <p className="mt-6 max-w-2xl text-xl sm:text-2xl leading-snug text-ink text-pretty">
@@ -41,8 +41,8 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href={links.discord}>{t.hero.joinCta}</ButtonLink>
-            <ButtonLink href={links.github} variant="secondary">
-              {t.hero.githubCta}
+            <ButtonLink href="/ideas/" variant="secondary">
+              {t.hero.thinkingCta}
             </ButtonLink>
           </div>
         </div>
@@ -68,8 +68,15 @@ export default function Home() {
             <ul className="grid gap-6 sm:grid-cols-2">
               {t.ideas.items.map((item) => (
                 <li key={item.title}>
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
-                  <p className="mt-1 leading-relaxed text-muted">{item.body}</p>
+                  <Link
+                    href={item.href}
+                    className="group block rounded-xl border border-rule bg-paper p-5 transition-colors hover:border-accent"
+                  >
+                    <h3 className="text-lg font-semibold text-accent group-hover:underline underline-offset-4">
+                      {item.title} →
+                    </h3>
+                    <p className="mt-1 leading-relaxed text-muted">{item.body}</p>
+                  </Link>
                 </li>
               ))}
             </ul>

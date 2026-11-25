@@ -6,7 +6,7 @@ The website for **Our Economy**: a global movement that invites anyone badly ser
 
 ## Current phase: experimentation (November 2026)
 
-- The site is **the pitch plus "Our current thinking"** (`/ideas/`): short, living pages on what we're trying to build, with links to the Discord server and the GitHub org. No sign-up form, no backend, no database, no personal data collected.
+- The site is **the pitch plus "Our current thinking"** (`/ideas/`): short, living pages on what we're trying to build, with links to the Discord server and the GitHub org. No sign-up form, no backend, no database, no personal data collected by us (comments are handled by EchoThread, an outside service).
 - People meet on **Discord** (see `docs/DISCORD.md`).
 - **Hours are not tracked yet.** Contributions are visible in the open-source repos under github.com/our-economy. Contribution accounting gets designed later, with the first group of collaborators.
 - Copy must be honest about this: early, experimenting, no pay yet, no hour tracking yet. Don't promise anything the project can't deliver today.
@@ -51,7 +51,7 @@ The website for **Our Economy**: a global movement that invites anyone badly ser
   | "better than basic income" | "doesn't depend on basic income or any public program" |
   | the excluded as victims | people looking for a place, or for something different |
 - Say "designed to", not "will", for anything untested (stability, 20-hour livelihoods). Cite sources for factual claims and check them before publishing.
-- **The Ideas pages** (`/ideas/`): metadata in `src/content/en/ideas.ts`, text in `src/content/en/ideas/<slug>.md`. Every page starts as *Draft*, shows the "in flux" notice, and ends with "Questions for you" to start conversations. Things deliberately not done yet are in `docs/BACKLOG.md`.
+- **The Ideas pages** (`/ideas/`): metadata in `src/content/en/ideas.ts`, text in `src/content/en/ideas/<slug>.md`. Every page starts as *Draft*, shows the "in flux" notice, ends with "Questions for you" to start conversations, and has EchoThread comments (`src/components/Comments.tsx`). Things deliberately not done yet are in `docs/BACKLOG.md`.
 - Build in small, shippable steps.
 - Plan for many languages and a global audience (i18n-ready text, no US-only assumptions), but don't add translation machinery until there's a second language to ship.
 - Keep the stack simple and cheap to host. Prefer open source.

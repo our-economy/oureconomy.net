@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { SiteNav, container } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StatusTag } from "@/components/StatusTag";
+import { Comments } from "@/components/Comments";
 import { links } from "@/content/en";
 import { ideas, ideasText as t } from "@/content/en/ideas";
 import { getIdea, getIdeaHtml, ideaSourcePath } from "@/lib/ideas";
@@ -80,6 +81,22 @@ export default async function IdeaPage({ params }: PageProps<"/ideas/[slug]">) {
           </header>
           <div className="prose-page mt-8" dangerouslySetInnerHTML={{ __html: html }} />
         </article>
+
+        <section aria-labelledby="comments" className="mt-12">
+          <h2 id="comments" className="text-2xl font-bold tracking-tight">
+            {t.comments.heading}
+          </h2>
+          <p className="mt-2 leading-relaxed">{t.comments.intro}</p>
+          <p className="mt-2 text-sm text-muted">{t.comments.privacy}</p>
+          <div className="mt-6">
+            <Comments
+              key={idea.slug}
+              pageId={`ideas/${idea.slug}`}
+              pageTitle={idea.title}
+              pageUrl={`https://oureconomy.net/ideas/${idea.slug}/`}
+            />
+          </div>
+        </section>
 
         <aside
           aria-labelledby="discuss"

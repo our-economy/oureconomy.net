@@ -2,6 +2,17 @@
 
 Newest first. Each entry says what was decided and why, so later sessions don't reopen settled questions without a reason.
 
+## 2026-11-25: Comments on Ideas pages (EchoThread), and easier paths to them
+
+**Decision:** Ideas pages have comments, run by EchoThread (echothread.io), embedded with `src/components/Comments.tsx`. Free Hobby plan for now: about 5,000 page views and 50 approved comments a month, manual moderation in EchoThread's dashboard. Each page's thread identifier is `ideas/<slug>`, so threads survive design changes. The home page now has the site nav, a "Read our current thinking" button in place of the GitHub button, and each "ideas we want to test" card links to its page.
+
+- **Why EchoThread:** comments without an account (name only), replies nested up to 5 levels, built-in ML spam filter and banned-word lists on every plan, export of all comments as JSON or CSV on every plan, no cookies, no ads, no trackers. Hyvor Talk (more established, reader flagging, AI checks) no longer has a free plan (from €5/month; webhooks only on its €40 plan).
+- **Risks:** closed source, run by one independent developer. Mitigation: export a backup now and then. Exported comments can be imported into another service after conversion, or built into the pages as a static archive.
+- **The key in the embed is public by design** ("a safeguard, not a password"); the widget only runs on the domains allowed in EchoThread's site settings. The private API tokens (`et_...`) must never go in the repo.
+- **Client-side navigation:** EchoThread documents no re-initialize API, so the component loads a fresh copy of the script whenever a page's comments mount (checked: navigating between Ideas pages loads the right thread).
+- **Personal data:** we still collect none ourselves. EchoThread processes commenters' names and comments; each page says so above the widget.
+- **Later:** the Starter plan ($5/month) adds moderator email alerts, webhooks, and an API that can reject or delete comments. That's what an automated AI moderation job (scheduled GitHub Action that checks new comments against our guidelines) would need. See `BACKLOG.md`.
+
 ## 2026-11-24: "Our current thinking" pages, and the words we use
 
 **Decision:** The site grows from one page to the pitch plus an Ideas section (`/ideas/`): short, living pages with our current thinking. Each page has a status (Draft / Taking shape / Agreed), a last-updated date, an "in flux" notice ("mostly written by the founder so far"), and ends with questions for readers, plus links to discuss on Discord and suggest a change on GitHub.
