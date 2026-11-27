@@ -109,7 +109,7 @@ export default function Home() {
             <h2 id="today" className={sectionHeading}>
               {t.today.heading}
             </h2>
-            <ol className="grid gap-4 sm:grid-cols-3">
+            <ol className="grid gap-4 sm:grid-cols-2">
               {t.today.steps.map((step, i) => (
                 <li
                   key={step.title}

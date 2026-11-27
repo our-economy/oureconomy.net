@@ -93,6 +93,12 @@ export const en = {
         href: links.goodFirstTasks,
       },
       {
+        title: "Help map the wider family",
+        body: "New Economy Hub, one of our projects, lists groups, events and online communities building new kinds of economy. Know one that's missing? Add it.",
+        cta: "Visit New Economy Hub",
+        href: links.hub,
+      },
+      {
         title: "Bring an experiment",
         body: "Have an idea for a new way to work or own things together? Bring it to the Discord.",
         cta: "Share an idea",

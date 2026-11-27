@@ -2,6 +2,12 @@
 
 Newest first. Each entry says what was decided and why, so later sessions don't reopen settled questions without a reason.
 
+## 2026-11-27: New Economy Hub is one of our projects, open to every group
+
+**Decision:** The site presents neweconomyhub.net as one of Our Economy's projects: a section on `/ideas/where-we-fit/` ("Helping the family find each other") and a "Help map the wider family" card under "What you can do today" on the home page. Its repo moved into the org as `our-economy/neweconomyhub.net` (from `pinodeca/new-economy-hub`), and it now has the same licenses as this repo (AGPL-3.0 code, CC BY-SA 4.0 content).
+
+**Why:** Groups in the wider family need to find each other before they can be stronger together, and the hub does that. Framing it as "one of our projects, open to all" (not "Our Economy's directory") keeps it useful and trusted by groups that will never join us: it lists everyone and doesn't steer people toward us. Hosting it in the org means work on it counts in the org's public contribution history. The two sites stay separate: link them, don't merge them.
+
 ## 2026-11-25: Comments on Ideas pages (EchoThread), and easier paths to them
 
 **Decision:** Ideas pages have comments, run by EchoThread (echothread.io), embedded with `src/components/Comments.tsx`. Free Hobby plan for now: about 5,000 page views and 50 approved comments a month, manual moderation in EchoThread's dashboard. Each page's thread identifier is `ideas/<slug>`, so threads survive design changes. The home page now has the site nav, a "Read our current thinking" button in place of the GitHub button, and each "ideas we want to test" card links to its page.
@@ -74,6 +80,6 @@ Newest first. Each entry says what was decided and why, so later sessions don't 
 
 ## 2026-11-16: Stack and hosting follow neweconomyhub.net
 
-**Decision:** Next.js with `output: "export"` (fully static), deployed to Azure Static Web Apps (Free tier), with DNS kept at Namecheap. This is the same setup as pinodeca/new-economy-hub.
+**Decision:** Next.js with `output: "export"` (fully static), deployed to Azure Static Web Apps (Free tier), with DNS kept at Namecheap. This is the same setup as our-economy/neweconomyhub.net (then pinodeca/new-economy-hub).
 
 **Why:** One stack to maintain across both sites, and the owner already runs and documents it. Alternatives considered: Astro + Cloudflare Pages (good, but a second stack), and a single hand-written HTML page like commonwork.coop (simplest, but harder to grow).
