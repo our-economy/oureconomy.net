@@ -36,7 +36,7 @@ export const ideas: Idea[] = [
       "Co-ops and community projects have built economies around working together for over a century. We're part of that family, with a proposal for how it could grow.",
     group: "build",
     status: "draft",
-    updated: "2026-11-24",
+    updated: "2026-11-27",
   },
   {
     slug: "why-we-care",
