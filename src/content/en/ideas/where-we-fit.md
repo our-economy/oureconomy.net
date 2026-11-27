@@ -34,7 +34,7 @@ The family is large, but it's hard to see from the outside. Groups often don't k
 
 So one of the projects we work on is **[New Economy Hub](https://neweconomyhub.net)**: an open map of groups, events and online communities across this wider family, with a focus on ones a newcomer could join this week.
 
-The hub isn't Our Economy, and it doesn't steer anyone toward us. It lists groups whatever their approach, because the whole family gets stronger when people can find each other. Our founder started it, and everything it lists is [public on GitHub](https://github.com/pinodeca/new-economy-hub), so you can help: suggest a group, an event or a forum, or improve the site.
+The hub isn't Our Economy, and it doesn't steer anyone toward us. It lists groups whatever their approach, because the whole family gets stronger when people can find each other. Our founder started it, and it's [open source](https://github.com/our-economy/neweconomyhub.net), so you can help: suggest a group, an event or a forum, or improve the site.
 
 It's early, too. So far it lists a few dozen groups, mostly in the United States. Each listing is researched with AI help and checked by a person before it goes up, and the site says so on every one.
 

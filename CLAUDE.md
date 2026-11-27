@@ -55,5 +55,5 @@ The website for **Our Economy**: a global movement that invites anyone badly ser
 - Build in small, shippable steps.
 - Plan for many languages and a global audience (i18n-ready text, no US-only assumptions), but don't add translation machinery until there's a second language to ship.
 - Keep the stack simple and cheap to host. Prefer open source.
-- Related: neweconomyhub.net (the owner maintains it; repo pinodeca/new-economy-hub) is the outward-facing directory of the wider ecosystem. This site is the movement itself. Link them; don't merge them. Reuse its stack and conventions where it makes sense.
+- Related: neweconomyhub.net (repo our-economy/neweconomyhub.net) is the outward-facing directory of the wider ecosystem. It's one of Our Economy's projects, but open to every group: it doesn't favor or steer people toward us. This site is the movement itself. Link them; don't merge them. Reuse its stack and conventions where it makes sense.
 - Possible reuse for team formation later: Found Teams (andrea-dev.com/tree/prototypes/found-teams): Fastify, Drizzle, Postgres/pgvector, React 19 + Vite.

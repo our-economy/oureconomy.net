@@ -84,7 +84,7 @@ Distilled from brainstorming conversations, November 2026. This is a starting po
   - `charter`
   - `experiments`: the registry
   - possibly a Found Teams fork
-- **Two sites:** neweconomyhub.net is the outward-facing map of the wider ecosystem (the owner maintains it), and oureconomy.net is the movement itself. The map draws people in, and the movement gives them a home.
+- **Two sites:** neweconomyhub.net is the outward-facing map of the wider ecosystem (one of our projects, open to every group; repo `our-economy/neweconomyhub.net`), and oureconomy.net is the movement itself. The map draws people in, and the movement gives them a home.
 
 ## 8. Suggested build order for the site
 - **v0.1 (as actually scoped, November 2026):** the one-page pitch plus links to Discord and the GitHub org. Nothing else.
